@@ -3,7 +3,9 @@
 #
 # Build the image with:
 #
-# docker build -f Dockerfile -t amunozhe/demo .
+
+# docker build -f Dockerfile -t amunozhe/demo:0.0.1-SNAPSHOT .
+
 #
 # Then run the container using:
 #
@@ -12,4 +14,6 @@ FROM adoptopenjdk/openjdk11:alpine
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 EXPOSE 8080
+
 ENTRYPOINT ["java","-jar","/app.jar"]
+
