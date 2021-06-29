@@ -3,7 +3,7 @@
 #
 # Build the image with:
 #
-# docker build -f Dockerfile -t amunozhe/demo .
+# docker build -f Dockerfile -t amunozhe/demo:0.0.1-SNAPSHOT .
 #
 # Then run the container using:
 #
